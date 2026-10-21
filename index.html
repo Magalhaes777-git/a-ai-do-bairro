@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Açaí do Bairro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>🍇 Açaí do Bairro</h1>
+    <p>Seu açaí, do seu jeito!</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Monte seu açaí</h2>
+
+      <label for="nome">Seu nome:</label>
+      <input id="nome" type="text" placeholder="Digite seu nome" maxlength="40">
+
+      <h3>1. Escolha o tamanho</h3>
+      <div id="tamanhos" class="tamanhos">
+        <label for="">
+            <input type="radio" name="tamanho" data-preco="20.00"> P - 300 Ml (Até 2 complementos)
+        </label>
+        <label for="">
+            <input type="radio" name="tamanho" data-preco="30.00"> G - 500 Ml(até 4 complementos)
+        </label>
+        
+      </div>
+
+      <h3>2. Escolha os adicionais</h3>
+      <div id="adicionais" class="adicionais"></div>
+
+      <h3>3. Observações</h3>
+      <textarea id="observacao" placeholder="Alguma observação?"></textarea>
+
+      <div class="resumo">
+        <h2>Seu pedido</h2>
+        <div id="resumo-itens">Escolha um tamanho.</div>
+        <div class="total">
+          Total: <span id="total">R$ 0,00</span>
+        </div>
+        <button id="confirmar" disabled>Confirmar pedido</button>
+        <p id="mensagem"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Açaí do Bairro © 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
